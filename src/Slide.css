@@ -11,7 +11,7 @@
     border-radius: 5px;
     transition: transform 450ms;
 }
-n .slide__content {
+.slide__content {
     margin-left: 30px;
     margin-top: 120px;
 }
