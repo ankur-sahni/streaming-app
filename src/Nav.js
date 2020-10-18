@@ -14,17 +14,17 @@ function Nav() {
             window.removeEventListener('scroll');
         };
     }, []);
-    console.log(show);
+    // console.log(show);
     return (
         <div className={`nav ${show && 'nav__black'}`}>
             <img
                 src={`${process.env.PUBLIC_URL}/logoss.png`}
-                className="nav__logo__left"
+                className="nav__logo nav__logo__left"
                 alt=""
             />
             <img
                 src={`${process.env.PUBLIC_URL}/logosj.png`}
-                className="nav__logo__right"
+                className="nav__logo nav__logo__right"
                 alt=""
             />
         </div>

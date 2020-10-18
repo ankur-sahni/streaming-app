@@ -20,14 +20,14 @@ function Slider({ fetchUrl }) {
         }
         fetchData();
     }, [fetchUrl]);
-    console.log(slides);
+    // console.log(slides);
     return (
         <Swiper
             spaceBetween={50}
             slidesPerView={1}
             autoplay={true}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
+            // onSlideChange={() => console.log('slide change')}
+            // onSwiper={(swiper) => console.log(swiper)}
         >
             {/* {carousel.map((item) => {
                 console.log(item);
@@ -42,14 +42,14 @@ function Slider({ fetchUrl }) {
                 );
             })} */}
             {slides.map((slide) => {
-                console.log(slide);
+                // console.log(slide);
                 return (
                     <SwiperSlide
                         key={slide.id}
                         className="large__slide"
                         style={{
                             backgroundSize: 'cover',
-                            backgroundImage: `url("https://image.tmdb.org/t/p/original/${slide?.poster_path}")`,
+                            backgroundImage: `url("https://image.tmdb.org/t/p/original/${slide?.backdrop_path}")`,
                             backgroundPosition: 'center center',
                         }}
                     >

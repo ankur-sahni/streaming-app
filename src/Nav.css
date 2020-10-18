@@ -12,6 +12,9 @@
 .nav__black {
     background-color: #222;
 }
+.nav__logo {
+    max-width: 140px;
+}
 .nav__logo__left {
     position: fixed;
     left: 20px;

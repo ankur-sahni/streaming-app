@@ -37,7 +37,7 @@ function App() {
         <div className="App">
             <Nav />
             <Banner />
-            <Slider fetchUrl={requests.fetchTopRated} />
+            <Slider fetchUrl={requests.fetchSlider} />
             <Row
                 title="NETFLIX ORIGINALS"
                 fetchUrl={requests.fetchNetFlixOriginals}
